@@ -22,6 +22,9 @@ def play():
             print("Too high!")
         else:
             print(f"Correct! You got it in {attempts} attempts.")
+            again = input("Play again? (y/n): ")
+            if again.lower() == "y":
+                play()
             break
 
 if __name__ == "__main__":
